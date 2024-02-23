@@ -88,7 +88,7 @@ function Formulario( {setMessage, agregarColaborador} ) {
           />
       </Form.Group>
 
-      <Button variant="primary" type="submit" className='w-100'>
+      <Button variant="dark" type="submit" className='w-100'>
         Agregar Colaborador
       </Button>
     </Form>

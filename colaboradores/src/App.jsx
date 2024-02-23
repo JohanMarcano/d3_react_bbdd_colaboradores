@@ -8,9 +8,7 @@ import { useState } from 'react'
 import Container from 'react-bootstrap/Container';
 
 
-
 function App() {
-
 
   const [colaboradores, setColaboradores] = useState(BaseColaboradores);
   const [message, setMessage] = useState();
@@ -21,19 +19,23 @@ function App() {
 
   return (
     <Container>
-      <h1>Base datos colaboradores</h1>
-      <Buscador colaboradores={colaboradores}/>
-      <div className='d-flex justify-content-between'>
-        <Listado colaboradores={colaboradores}/>
-        <div className='d-flex flex-column'>
-          <Formulario setMessage={setMessage} agregarColaborador={agregarColaborador}/>
-          {
+      <h1>Base de datos colaboradores</h1>
+      <div className='row'>
+        <div className='col-md-8'>
+          <Buscador colaboradores={colaboradores}/>
+          <Listado colaboradores={colaboradores}/>
+        </div>
+        <div className='col-md-4'>
+          <div className='d-flex flex-column'>
+            <Formulario setMessage={setMessage} agregarColaborador={agregarColaborador}/>
+            {
             message && <Alert message={message}/>
-          }
-          
+            }
+          </div>
         </div>
       </div>
     </Container>
+
   )
 }
 

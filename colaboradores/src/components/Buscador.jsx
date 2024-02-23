@@ -33,7 +33,7 @@ function Buscador( {colaboradores} ) {
               />
           </Form.Group> 
 
-          <Button variant="primary" type="submit" className='w-100'>
+          <Button variant="dark" type="submit" className='w-100'>
                 Buscar
           </Button>
 

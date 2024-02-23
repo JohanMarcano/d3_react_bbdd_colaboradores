@@ -2,8 +2,6 @@ import Table from 'react-bootstrap/Table';
 
 
 function Listado(  {colaboradores}  ) {
-  
-
 
     return (
 
